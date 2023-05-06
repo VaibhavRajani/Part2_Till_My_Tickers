@@ -27,6 +27,7 @@
 		80E602522A05C88B00C29F21 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E602512A05C88B00C29F21 /* SearchViewModel.swift */; };
 		80E602542A05CC7000C29F21 /* StocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E602532A05CC7000C29F21 /* StocksAPI.swift */; };
 		80E602562A05CCA700C29F21 /* MockStocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E602552A05CCA700C29F21 /* MockStocksAPI.swift */; };
+		80E602592A05CEF500C29F21 /* StocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 80E602582A05CEF500C29F21 /* StocksAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E602592A05CEF500C29F21 /* StocksAPI in Frameworks */,
 				80E602392A05C02F00C29F21 /* XCAStocksAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +190,7 @@
 			name = MyStock;
 			packageProductDependencies = (
 				80E602382A05C02F00C29F21 /* XCAStocksAPI */,
+				80E602582A05CEF500C29F21 /* StocksAPI */,
 			);
 			productName = MyStock;
 			productReference = 80E6021E2A05BEDA00C29F21 /* MyStock.app */;
@@ -219,6 +222,7 @@
 			mainGroup = 80E602152A05BEDA00C29F21;
 			packageReferences = (
 				80E602372A05C02F00C29F21 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */,
+				80E602572A05CEF500C29F21 /* XCRemoteSwiftPackageReference "StocksAPI" */,
 			);
 			productRefGroup = 80E6021F2A05BEDA00C29F21 /* Products */;
 			projectDirPath = "";
@@ -473,6 +477,14 @@
 				kind = branch;
 			};
 		};
+		80E602572A05CEF500C29F21 /* XCRemoteSwiftPackageReference "StocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VaibhavRajani/StocksAPI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -480,6 +492,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 80E602372A05C02F00C29F21 /* XCRemoteSwiftPackageReference "XCAStocksAPI" */;
 			productName = XCAStocksAPI;
+		};
+		80E602582A05CEF500C29F21 /* StocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E602572A05CEF500C29F21 /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
